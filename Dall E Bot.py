@@ -75,8 +75,8 @@ async def version(interaction:discord.Interaction):
     await interaction.response.send_message(embed=embed)
 
 
-@bot.tree.command(name="draw", description="Ask me to draw something e.g cute anime cat with dalle 3. Image sizes are large,landscape and portrait. ")
-async def drawpic(interaction:discord.Interaction, *, what_to_draw: str,number_of_pics:int=GPT_DALL_E_3_NUMBER_OF_IMAGES,pic_size:GPT_DALL_E_3_SIZE):
+@bot.tree.command(name="draw", description="Ask me to draw something e.g cute anime cat with dalle 3.large,landscape and portrait. ")
+async def drawpic(interaction:discord.Interaction, *, what_to_draw: str,number_of_pics:int=GPT_DALL_E_3_NUMBER_OF_IMAGES,pic_size:str=GPT_DALL_E_3_SIZE):
     #defer the response so we can get the image and then send it later, by default the response is sent after 3 seconds if we dont defer it
     # if the defer is not used then the response will be sent before the image is retrieved and we get an error
     await interaction.response.defer()
