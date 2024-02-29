@@ -1,0 +1,27 @@
+{
+    "Discord_Bot_Configuration": {
+        "discord_bot_name":"DEB",
+        "discord_bot_token": "",
+        "version": "1.0.0",
+        "primary_embed_color": "0x00ff00"
+    },
+
+    "OpenAI_Configuration":{
+        "openai_key": "",
+        "DALL-E-2-Config": {
+            "GPT_Art_Engine": "dall-e-2",
+            "GPT_Art_Quality": "standard",
+            "GPT_Art_Size": "large",
+            "Number_of_GPT_Art_Images": 2,
+            "Max_IMAGES":6
+        },
+        "DALL-E-3-Config": {
+            "GPT_Art_Engine": "dall-e-3",
+            "GPT_Art_Quality": "standard",
+            "GPT_Art_Size": "large",
+            "Number_of_GPT_Art_Images": 2,
+            "Max_IMAGES":6
+        }
+
+    }
+    }
