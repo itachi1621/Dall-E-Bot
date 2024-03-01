@@ -101,7 +101,7 @@ async def drawpic(interaction:discord.Interaction, *, what_to_draw: str,number_o
             if size == "large":
                 size = "1024x1024"
 
-            elif size == "portait":
+            elif size == "portrait":
                 size = "1024x1792"
 
             elif size == "landscape":
