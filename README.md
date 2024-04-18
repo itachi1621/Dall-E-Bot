@@ -16,7 +16,8 @@ A Discord bot that utilizes OpenAI's DALL-E to generate images based on user pro
  - Python 3.8 or higher                                                                                                                              
  - `discord.py` library                                                                                                                              
  - `aiohttp` library
- - `pip`                                                                                                                                 
+ - `pip`
+ - `python-dotenv`                                                                                                                               
  - An OpenAI API key with access to DALL-E models                                                                                                    
                                                                                                                                                      
  ### Installation                                                                                                                                    
@@ -64,9 +65,11 @@ A Discord bot that utilizes OpenAI's DALL-E to generate images based on user pro
 
     }
     }
+
+ 5 create a `.env` file using the `env_sample` a put the full path to the config file after the `CONFIG_FILE_PATH=`  e,g /home/ubuntu/..../config.json
                                                                                                                                                 
                                                                                                                                                      
- 5 Run the bot with:                                                                                                                                 
+ 6 Run the bot with:                                                                                                                                 
                                                                                                                                                      
     python your_script_name.py                                                                                                                       
                                                                                                                                                      
