@@ -7,10 +7,19 @@ import re;
 import time;
 import io;
 import random;
+import dotenv;
+
+#load the dotenv file
+dotenv.load_dotenv()
+
+# Load the environment variables
+config_file = os.getenv('CONFIG_FILE_PATH')
+
 
 # Get the bot token from the config file
-base_path = os.getcwd()
-config_file = os.path.join(base_path, 'config.json')
+#base_path = os.getcwd()
+#config_file =
+#os.path.join(base_path, 'config.json')
 
 smile = "\U0001F600"
 frown = "\U0001F641"
