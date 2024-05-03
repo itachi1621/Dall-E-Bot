@@ -71,7 +71,20 @@ A Discord bot that utilizes OpenAI's DALL-E to generate images based on user pro
                                                                                                                                                      
  6 Run the bot with:                                                                                                                                 
                                                                                                                                                      
-    python your_script_name.py                                                                                                                       
+    python your_script_name.py   
+
+## Setting Up the Discord Bot
+1. Create a Discord Bot Application and obtain a bot token.
+    - Go to the Discord Developer Portal.
+    - Create a new application.
+2. Under the "Bot" tab, click "Add Bot" and copy the token.
+    - Paste your Discord bot token into config.json under "discord_bot_token" in the Discord_Bot_Configuration section.
+3. Invite your bot to your Discord server.
+    - Visit the OAuth2 URL generator in the Discord Developer Portal.
+    - Select the "bot" scope and copy the generated URL.
+    - Permissions needed are `Slash Commands`, `Send Messages` and `Send Messages in threads`
+    - Paste the URL into your browser and select the server to invite the bot.
+4. Run the bot script again after setup to start your Discord bot.                                                                                                                    
                                                                                                                                                      
 
   ## Available Commands                                                                  
