@@ -34,7 +34,9 @@ A Discord bot that utilizes OpenAI's DALL-E to generate images based on user pro
                                                                                                                                                      
  3. **Install the required libraries using pip.**                                                                                                         
                                                                                                                                                      
-    pip install discord aiohttp                                                                                                                      
+    pip install discord aiohttp
+    or
+    pip install -r requirements.txt                                                                                                           
                                                                                                                                                      
  4 Create a `config.json` file in the root directory with the following structure and fill in your values a sample file called `config_sample.json` has been included for reference:                                             
                                                                                                                                                      
