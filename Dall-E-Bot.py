@@ -170,8 +170,10 @@ async def drawpic(interaction:discord.Interaction, *, what_to_draw: str,number_o
                             title = remove_special_characters(title) #Magic Stuff happens here
                             #random file name with unix the timestamp this is to prevent the same file name being used by multiple users
                             #random id
+                            random_numb = random.randrange(1000,4000)
+                            file_name = str(int(time.time()))+str(random_numb)+"_"+ title + ".png"
 
-                            file_name = str(int(time.time()))+"_"+ title + ".png"
+                            #file_name = str(int(time.time()))+"_"+ title + ".png"
                             files.append(discord.File(data, filename=file_name,description=revised_prompts[location])) # Description is or the ALT text for the image to see it it needs to be  enabled on the account
                             location = location + 1
                     #now we send the files another way would have been to use the embed.set_image(url=image_url) mutiple times but that would have been a waste of bandwidth
@@ -260,8 +262,9 @@ async def drawpic(interaction:discord.Interaction, *, what_to_draw: str,number_o
                             #need to check for special characters in the title
 
                             title = remove_special_characters(title)
-                            random_number = str(int(time.time())) + str(random.randint(0,1000))
-                            file_name = random_number+"_"+ title + ".png"
+                            random_numb = random.randrange(1000,4000)
+                            file_name = str(int(time.time()))+str(random_numb)+"_"+ title + ".png"
+
                             files.append(discord.File(data, filename=file_name,description=what_to_draw))
 
                     #now we send the files another way would have been to use the embed.set_image(url=image_url) mutiple times but that would have been a waste of bandwidth
